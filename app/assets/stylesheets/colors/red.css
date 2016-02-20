@@ -1,48 +1,48 @@
 /* ==========================================================================
-   COLOR: MIDNIGHT-BLUE #2c3e50 - #34495e 
+   COLOR: RED #c0392b - #cb6060
 ========================================================================== */ 
 a, .text-color {
-    color: #2c3e50;
+ 	color: #c0392b;
 }
 
 .color-bg {
-    background-color: #2c3e50;
+    background-color: #c0392b;
 }
 
 /*------------------------------------------*/
-/*   Red Buttons 
+/*	 Red Buttons 
 /*------------------------------------------*/
 .btn-color-ghost {
-    background: transparent;
-    color: #2c3e50;
-    border-color: #2c3e50;
+	background: transparent;
+	color: #c0392b;
+	border-color: #c0392b;
 }
 
 .btn-color, .btn-color-ghost:hover {
-    background: #2c3e50;
-    color: #fff;
-    border-color: #2c3e50;
+	background: #c0392b;
+	color: #fff;
+	border-color: #c0392b !important;
 }
 
 .btn-color:hover {
-    background: #ffffff;
-    color: #2c3e50;
-    border-color: #2c3e50;
+	background: #ffffff;
+	color: #c0392b;
+	border-color: #c0392b;
 }
 
 .btn-white {
-    color: #2c3e50;
+    color: #c0392b;
 }
 
 .navbar-nav>li>a.btn-signup {
-    background: #2c3e50;
+    background: #c0392b;
     color: #ffffff;
-    border-color: #2c3e50;
+    border-color: #c0392b;
 }
 
 .navbar-nav>li>a.btn-signup:hover, .navbar-nav>li>a.btn-signup:focus {
     background: #ffffff;
-    color: #2c3e50;
+    color: #c0392b;
     border-color: #ffffff;
 }
 
@@ -51,46 +51,46 @@ a, .text-color {
 /*------------------------------------------*/
 .solid-bg{
     background:none;
-    background-color: #2c3e50;
+    background-color: #c0392b;
 }
 
 .navbar-nav>li>a.btn-white{
-    color: #2c3e50;
+    color: #c0392b;
 }
 
 /*------------------------------------------*/
 /*   Header App
 /*------------------------------------------*/
 .type .hero-section span{
-    background-color: #2c3e50;
+    background-color: #c0392b;
 }
 
 /*------------------------------------------*/
-/*   Form
+/*	 Form
 /*------------------------------------------*/
 .form-control {
-    border: 2px solid #34495e;
+    border: 2px solid #cb6060;
 }
 
 /*------------------------------------------*/
-/*   Icons
+/*	 Icons
 /*------------------------------------------*/
 .icon-lg:hover, .icon-lg:focus, .icon-sm:hover, .icon-sm:focus {
-    color:#2c3e50;
+    color:#c0392b;
 }
 
 /*------------------------------------------*/
-/*   Preloader
+/*	 Preloader
 /*------------------------------------------*/
 .preloader{
-    background-color: #2c3e50;
+	background-color: #c0392b;
 }
 
 /*------------------------------------------*/
 /*   Navbar Links Menu
 /*------------------------------------------*/
 .is-scrolling .navbar-nav>.active>a, .is-scrolling .navbar-nav>.active>a:hover, .is-scrolling .navbar-nav>.active>a:focus {
-    color: #2c3e50;
+    color: #c0392b;
     background-color: transparent;
 }
 
@@ -99,41 +99,41 @@ a, .text-color {
 /*------------------------------------------*/
 .login .modal-header .modal-title span{
     font-weight: 400;
-    color: #2c3e50;
+    color: #c0392b;
 }
 
 /*------------------------------------------*/
 /*   Pricing Tab
 /*------------------------------------------*/
 .pricing-tab {
-    border: 3px solid #34495e;
+    border: 3px solid #cb6060;
 }
 
 .pricing-tab h4 {
-    border-bottom: 3px solid #34495e;
+    border-bottom: 3px solid #cb6060;
 }
 
 .pricing-tab .ribbon .popular{
-    background-color: #2c3e50;
+    background-color: #c0392b;
 }
 
 /*------------------------------------------*/
 /*   Team
 /*------------------------------------------*/
 .team-img .img-icons span i:hover{
-    color: #2c3e50;
+    color: #c0392b;
 }
 
 /*------------------------------------------*/
 /*   Signup-Divider & Fast-Reg
 /*------------------------------------------*/
 .signup-divider .form-control:focus{
-    border-color: #2c3e50;
+    border-color: #c0392b;
 }
 
 .fast-reg .form-control:focus{
-    background-color: #2c3e50;
-    border-color: #2c3e50;
+    background-color: #c0392b;
+    border-color: #c0392b;
     box-shadow: none;
 }
 
@@ -141,7 +141,7 @@ a, .text-color {
 /*   Footer
 /*------------------------------------------*/
 .footer a:hover{
-    color: #2c3e50;
+    color: #c0392b;
 }
 
 

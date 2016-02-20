@@ -9,6 +9,7 @@ Rails.application.config.assets.precompile += %w( feature4.png )
 Rails.application.config.assets.precompile += %w( feature5.png )
 Rails.application.config.assets.precompile += %w( working.jpg )
 Rails.application.config.assets.precompile += %w( group.jpg )
+Rails.application.config.assets.precompile += %w( apps-grid.png )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

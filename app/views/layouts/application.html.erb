@@ -10,7 +10,7 @@
 	   <!-- =========================
              PRELOADER - COMMENTED OUT FOR NOW UNTIL DEV COMPLETED!
         ============================== -->
-       <!-- <div class="preloader">
+       <!--<div class="preloader">
             <div class="loader-container">
                 <div class="text-logo">AngularX</div>
                 <div class="signal"></div>
@@ -28,10 +28,7 @@
 
                 <!-- =========================================
                      Navigation
-                ========================================== -->
-               
-               
-               
+                ========================================== -->    
                 <nav class="navbar navbar-fixed-top" role="navigation">
                     <div class="container">
                         <div class="row">
@@ -68,42 +65,53 @@
                                         <li><a href="#testimonials" title="" class="scrollto">Testimonials</a></li>
                                         <li><a href="#team" title="" class="scrollto">Team</a></li>
                                         <li><a href="#mobile-download" title="" class="scrollto">Mobile</a></li>
-										  <li id="apps-drop"><i class="icon_grid-2×2"></i></li>
-                                        <!-- Login and Signup Modal on click -->
-                                        <li><a class="btn btn-nav" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Login</a></li>
-                                        <li><a class="btn btn-nav btn-color" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Sign Up</a></li> 
+                                        
+                                        <!-- For Dropdown apps menu - Google Style -->
+                                        <div class="col-xs-12 col-sm-3 col-md-3 col-ld-3 menu-grid" id="apps-center">
+                                          <div class="btn-group">
+                                              <li><button class="apps-button" type="button" data-toggle="dropdown"><i class="material-icons">&#xE5C3;</i></button></li>
+                                              <div class="dropdown-menu" role="menu">
+                                                <div class="list">
+                                                  <div class="row">
+                                                    <div class="col-sm-4 col-xs-6">
+                                                      <a href="#">
+                                                        <span class="blog"></span>
+                                                        <div class="menu"><span><i class="icon-bargraph" id='terminal'></i></span>Terminal</div>
+                                                      </a>
+                                                    </div>
+                                                    <div class="col-sm-4 col-xs-6">
+                                                      <a href="#">
+                                                        <div class="menu"><span><i class="icon-chat" id='talent'></i></span>Talent</div>
+                                                      </a>
+                                                    </div>
+                                                    <div class="col-sm-4 col-xs-6">
+                                                      <a href="#">
+                                                        <div class="menu"><span><i class="icon-search" id='GRI'></i></span>GRI Search</div>
+                                                      </a>
+                                                    </div> 
+                                                    <div class="col-sm-4 col-xs-6">
+                                                      <a href="#">
+                                                        <div class="menu"><span><i class="icon-profile-female" id='participant'></i></span>Participants</div>
+                                                      </a>
+                                                    </div> <!--/End for Participants -->
+                                                 </div> <!--/End for list-->
+                                              </div> <!--/End for row-->
+                                            </div> <!--/End for dropdown menu-->
+                                        </div> <!--/End for button group-->
+                                    </div>  <!--/End for menu grid -->  
+							
+                                    <!-- Login and Signup Modal on click -->
+                                    <li><a class="btn btn-nav" data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Login</a></li>
+                                    <li><a class="btn btn-nav btn-color" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">Sign Up</a></li> 
+										
 
-
-                                        <div class="btn-group">
-								      
-								          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"></button>
-								          <div class="dropdown-menu" role="menu">
-								            <div class="list">
-								              <div class="row">
-								                <div class="col-sm-4 col-xs-6">
-								                  <a href="#">
-								                    <span class="blog"></span>
-								                    <div class="menu"><span></span>Blogger</div>
-								                  </a>
-								                </div>
-								                <div class="col-sm-4 col-xs-6">
-								                  <a href="#">
-								                    <div class="menu"><span></span>+Google</div>
-								                  </a>
-								                </div>
-								                <div class="col-sm-4 col-xs-6">
-								                  <a href="#">
-								                    <div class="menu"><span></span>Translater</div>
-								                  </a>
-								                </div>
-								              </div>
-										</div>
-                                    </ul>
-                                </div><!-- /End Navbar-Collapse -->
-                            </div><!-- /End Col -->
-                        </div><!-- /End Row -->
-                    </div><!-- /End Container -->
-                </nav><!-- /End Sticky Navigation -->
+										          
+                            </ul> <!--/End menu ul -->
+                        </div><!-- /End Navbar-Collapse -->
+                    </div><!-- /End Col -->
+                </div><!-- /End Row -->
+            </div><!-- /End Container -->
+        </nav><!-- /End Sticky Navigation -->
 
 
                 <!-- =========================================

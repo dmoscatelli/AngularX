@@ -26,7 +26,13 @@
 
 
 
-
+ $(document).ready(function(){
+    $('.menu-grid .btn-group').hover(function(){
+      $('.dropdown-menu', this).stop(true, true).delay(200).fadeIn();
+    }, function(){
+      $('.dropdown-menu', this).stop(true, true).delay(300).fadeOut('fast');
+    });
+  });
 
 
 
