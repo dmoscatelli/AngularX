@@ -407,27 +407,27 @@ $('.start-charts').waypoint(function(direction){
             var doughnutData = [
                 {
                     value: 50,
-                    color:"#C0392B",
+                    color:"#4285F4",
                     highlight: "#EA402F",
-                    label: "Beautiful Design"
+                    label: "Itegrated Data"
                 },
                 {
                     value: 25,
                     color: "#323A45",
                     highlight: "#4C5B70",
-                    label: "Responsive Layout"
+                    label: "Platform Reporting"
                 },
                 {
                     value: 15,
                     color: "#949FB1",
                     highlight: "#A8B3C5",
-                    label: "Persuasive Call to Action"
+                    label: "Organizational Analytics"
                 },
                 {
                     value: 5,
                     color: "#27AE60",
                     highlight: "#29C36A",
-                    label: "Social Proof"
+                    label: "Trend Analysis"
                 }
 
             ];
@@ -435,7 +435,7 @@ $('.start-charts').waypoint(function(direction){
             var doughnut2Data = [
                 {
                     value: 827,
-                    color:"#C0392B",
+                    color:"#4285F4",
                     highlight: "#EA402F",
                     label: "Cups of Coffee"
                 },

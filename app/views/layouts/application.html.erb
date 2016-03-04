@@ -22,7 +22,7 @@
         <!-- =========================
              HEADER
         ============================== -->
-        <header class="header" id="top" data-stellar-background-ratio="0.5">
+        <header class="header slider" id="top">
             <!-- Background Overlay -->
             <div class="overlay">
 
@@ -41,17 +41,18 @@
                                         <i class="icon icon_menu"></i>
                                     </button>
 
-                                    <!-- Text-Logo -->
-                                    <a href="#top" class="navbar-brand scrollto" title="SmartMvp">
+                                    <!-- Text-Logo 
+                                    <a href="#top" class="navbar-brand scrollto" title="AngularX">
                                         <span class="text-logo">AngularX</span>
-                                    </a> 
+                                    </a> -->
 
-                                    <!-- Image-Logo: Remove this comments and the section above Text-Logo if you want to add an Image-Logo (recommended sizes -> max-height:50, max-width:200) 
+                                     <!--Image-Logo: Remove this comments and the section above Text-Logo if you want to add an Image-Logo (recommended sizes -> max-height:50, max-width:200) -->
 
-                                    <a href="#top" class="navbar-brand img-logo scrollto" title="SmartMvp">
-                                        <img src="assets/images/logo.png" alt="Logo">
+                                    <a href="#top" class="navbar-brand img-logo scrollto" title="AngularX">
+                                        <%= image_tag "AngularX_Logo.png", alt: "Logo", height: '40' %>
+                                    
                                     </a> 
-                                    -->
+                                    
 
                                 </div><!-- /End Navbar-Header -->
 
@@ -59,11 +60,36 @@
                                 <div class="navbar-collapse collapse">
                                     <ul class="nav navbar-nav navbar-right">
                                         <!-- Menu Items -->
-                                        <li><a href="#about" title="" class="scrollto">About</a></li>
-                                        <li><a href="#features" title="" class="scrollto">Features</a></li>
-                                        <li><a href="#pricing" title="" class="scrollto">Pricing</a></li>
-                                        <li><a href="#testimonials" title="" class="scrollto">Testimonials</a></li>
-                                        <li><a href="#team" title="" class="scrollto">Team</a></li>
+
+                                        <ul class="nav navbar-nav navbar-right">
+                                        <li class="dropdown" id="header-dd">
+                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">Sustainability</a></li>
+                                            <li><a href="#">Talent</a></li>
+                                            <li><a href="#">Profitability</a></li>
+                                            <li><a href="#">Financial Analytics</a></li>
+                                            <li><a href="#">AngularX Dashboard</a></li>
+                                            <li><a href="#">AngularX Talent</a></li>
+                                            <li><a href="#">AngularX Terminal</a></li>
+                                             <li role="separator" class="divider"></li>
+                                             <li><a href="#">Case Studies</a></li>
+                                             <li><a href="#">Use Cases</a></li>
+                                          </ul>
+                                        </li>
+                                           <li class="dropdown" id="header-dd">
+                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industries<span class="caret"></span></a>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">Financial Services</a></li>
+                                            <li><a href="#">Education &amp; Non Profit</a></li>
+                                            <li><a href="#">Energy</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Health care</a></li>
+                                          </ul>
+                                        </li>
+                                        <li><a href="#pricing" title="" class="scrollto">Participants</a></li>
+                                        <li><a href="#testimonials" title="" class="scrollto">About</a></li>
+                                        <li><a href="#team" title="" class="scrollto">Contact</a></li>
                                         <li><a href="#mobile-download" title="" class="scrollto">Mobile</a></li>
                                         
                                         <!-- For Dropdown apps menu - Google Style -->
@@ -73,6 +99,12 @@
                                               <div class="dropdown-menu" role="menu">
                                                 <div class="list">
                                                   <div class="row">
+                                                     <div class="col-sm-4 col-xs-6">
+                                                      <a href="#">
+                                                        <span class="blog"></span>
+                                                        <div class="menu"><span><i class="icon-speedometer" id='terminal'></i></span>Dashboard</div>
+                                                      </a>
+                                                    </div>
                                                     <div class="col-sm-4 col-xs-6">
                                                       <a href="#">
                                                         <span class="blog"></span>
@@ -204,32 +236,21 @@
                         <div class="col-md-5">
                                 <!-- Logo -->
                                 <a href="#top" class="scrollto" title="SmartMvp">
-                                    <span class="text-logo">SmartMvp</span>
+                                    <span class="text-logo">AngularX</span>
                                 </a>
-                                <p class="footer-hero"><strong>600.000</strong> users registered since January.<br>
-                                We've created the product that will help your startup get better marketing results.</p>
-                                <p class="footer-cta">What are you waiting for?
-                                    <a href="#top" class="btn btn-color">Purchase this Design</a>
+                                <p class="footer-cta">Like to request a demo?
+                                    <a href="#top" class="btn btn-color">Get Started</a>
                                 </p> 
                         </div>
                         <!-- Footer Contact Col -->
                         <div class="col-md-3">
-                            <h5 class="text-white">Our Contact</h5>
+                            <h5 class="text-white">Contact</h5>
                             <div class="contact-item">
                                 <div class="contact-icon">
                                     <i class="icon icon_mail"></i>
                                 </div>
                                 <div class="contact-content">
-                                    <a href="mailto:hi@themedept.com">hi@themedept.com</a>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="icon icon_pin"></i>
-                                </div>
-                                <div class="contact-content">
-                                    121 King Street, Melbourne<br>
-                                    Victoria 3000 Australia
+                                    <a href="mailto:hi@angularx.com">hi@angularx.com</a>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -237,15 +258,15 @@
                                     <i class="icon icon_phone"></i>
                                 </div>
                                 <div class="contact-content">
-                                    1-234-567-89
+                                    Need help? +1 312-224-1617
                                 </div>
                             </div>
                         </div>
-                        <!-- Footer Right Col: Twitter Feed -->
+                        <!-- Footer Right Col: Twitter Feed 
                         <div class="col-md-4">
                                 <h5 class="text-white">Recent Tweets</h5>
                                 <div class="tweet"></div>
-                        </div>
+                        </div>-->
 
                         <!-- Footer Menu and Copy -->
                         <div class="row">
@@ -255,7 +276,7 @@
                                         <a href="#">About</a>
                                     </li>
                                     <li>
-                                        <a href="#">Blog</a>
+                                        <a href="#">Careers</a>
                                     </li>
                                     <li>
                                         <a href="#">Help</a>
@@ -267,7 +288,7 @@
                                         <a href="#">Privacy</a>
                                     </li>
                                 </ul>
-                                <p class="footer-copy">&copy; 2014 - SmartMvp. Original Design by <a href="http://themedept.com">ThemeDept.</a></p>
+                                <p class="footer-copy">&copy; 2016 - AngularX DBA<a href="http://plexanalytics.com"> Plex Analytics</a></p>
                             </div>
                         </div>
                         
