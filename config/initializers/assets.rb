@@ -22,6 +22,10 @@ Rails.application.config.assets.precompile += %w( bg_test_1)
 Rails.application.config.assets.precompile += %w( ibm.png )
 Rails.application.config.assets.precompile += %w( watson.png )
 Rails.application.config.assets.precompile += %w( google.png )
+Rails.application.config.assets.precompile += %w( appsbar.png )
+Rails.application.config.assets.precompile += %w( gri.jpg )
+Rails.application.config.assets.precompile += %w( aicpa.png )
+Rails.application.config.assets.precompile += %w( g4.png )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
