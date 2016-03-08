@@ -852,6 +852,21 @@ p {
     margin-bottom: 20px;
 }
 
+
+/*------------------------------------------*/
+/*   About - About us Page
+/*------------------------------------------*/
+
+.intro-about {
+    margin-top: 50px;
+}
+
+.intro-about .icon-lg{
+    margin-bottom: 50px;
+}
+
+
+
 /*------------------------------------------*/
 /*   Image with Action
 /*------------------------------------------*/
@@ -2120,4 +2135,25 @@ p {
     #framework li {
         display: inline-block;
         padding: 10px;
+    }
+
+    .side-nav li{
+    border-bottom:solid 1px #f2f2f2;
+    padding:10px 20px 10px 20px;
+    }
+
+    .side-nav li a{
+    color:#333;
+    }
+
+    .side-nav li.active{
+    background:#4285F4;
+    }
+
+    .side-nav li.active a{
+    color:#fff;
+    }
+
+    .side-nav li:hover{
+    background:#f2f2f2;
     }

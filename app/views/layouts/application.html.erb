@@ -22,7 +22,12 @@
         <!-- =========================
              HEADER
         ============================== -->
+        
+        <% if @solid %>
         <header class="header slider" id="top">
+        <% else %>
+        <header class="solid-bg" id="top">
+        <% end %>
             <!-- Background Overlay -->
             <div class="overlay">
 
@@ -88,7 +93,7 @@
                                           </ul>
                                         </li>
                                         <li><a href="#pricing" title="" class="scrollto">Participants</a></li>
-                                        <li><a href="#testimonials" title="" class="scrollto">About</a></li>
+                                        <li><%= link_to 'About', about_path %></li>
                                         <li><a href="#team" title="" class="scrollto">Contact</a></li>
                                         <li><a href="#mobile-download" title="" class="scrollto">Mobile</a></li>
                                         

@@ -1,7 +1,21 @@
 Rails.application.routes.draw do
 
 
-   get '/index', :to => 'pages#index'
+
+    root 'pages#index'
+   
+   get '/about', :to => 'pages#about' 
+
+   get 'about/principles', :to => 'pages#principles'
+   get 'about/culture', :to => 'pages#culture'
+   get 'about/software', :to => 'pages#software'
+   get 'about/careers', :to => 'pages#careers'
+   get 'about/faq', :to => 'pages#faq'
+
+  
+  
+   
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

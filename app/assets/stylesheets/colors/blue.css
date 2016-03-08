@@ -51,7 +51,8 @@ a, .text-color {
 /*------------------------------------------*/
 .solid-bg{
     background:none;
-    background-color: #4285F4;
+    height: 70px;
+    background-color: #3B434D;
 }
 
 .navbar-nav>li>a.btn-white{
