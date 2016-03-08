@@ -23,6 +23,10 @@ def faq
 end  
 
 
+def cases
+end
+
+
 
 
 end

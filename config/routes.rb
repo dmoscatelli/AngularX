@@ -12,6 +12,8 @@ Rails.application.routes.draw do
    get 'about/careers', :to => 'pages#careers'
    get 'about/faq', :to => 'pages#faq'
 
+   get '/use-cases', :to => 'pages#cases'
+
   
   
    

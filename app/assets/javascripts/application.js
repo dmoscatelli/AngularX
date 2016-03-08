@@ -22,7 +22,10 @@
 //= require jquery.superslides.min
 //= require Chart
 //= require custom
-//= require slider.js
+//= require slider
+
+
+
 
 
 

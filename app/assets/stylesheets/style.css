@@ -859,6 +859,7 @@ p {
 
 .intro-about {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .intro-about .icon-lg{
@@ -2157,3 +2158,25 @@ p {
     .side-nav li:hover{
     background:#f2f2f2;
     }
+
+    /* For the careers page typed strings */
+
+    .type-wrap.title-careers {font-size:27px !important; font-weight:600;  }
+
+
+    .box-type {
+        border: 1px solid #4285F4;
+        padding: 12px;
+        width: 70%;
+        margin: 0 auto;
+        background-color: white;
+        text-align: center;
+        border-radius: 0.2px; 
+        -moz-border-radius: 0.2px; 
+        -webkit-border-radius: 0.2px;
+    }
+
+    #careers-type {
+        color: black;
+    }
+
