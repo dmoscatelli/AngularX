@@ -13,6 +13,15 @@ Rails.application.routes.draw do
    get 'about/faq', :to => 'pages#faq'
 
    get '/use-cases', :to => 'pages#cases'
+   get '/use-cases/financial-services', :to => 'pages#use_financial'
+   get '/use-cases/health-care', :to => 'pages#use_health'
+   get '/use-cases/education', :to => 'pages#use_education'
+   get '/use-cases/non-profit', :to => 'pages#use_non_profit'
+   get '/use-cases/sustainability', :to => 'pages#use_sustainability'
+   get '/use-cases/talent-analytics', :to => 'pages#use_talent'
+   get '/use-cases/financial-statement-analytics', :to => 'pages#use_financial_statement'
+   get '/use-cases/profitability', :to => 'pages#use_profitability'
+   get '/case-studies', :to => 'pages#studies'
 
   
   

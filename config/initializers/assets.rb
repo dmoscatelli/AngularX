@@ -27,6 +27,7 @@ Rails.application.config.assets.precompile += %w( gri.jpg )
 Rails.application.config.assets.precompile += %w( aicpa.png )
 Rails.application.config.assets.precompile += %w( g4.png )
 Rails.application.config.assets.precompile += %w( AngularX_Comp.png )
+Rails.application.config.assets.precompile += %w( use-case-1.png )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
