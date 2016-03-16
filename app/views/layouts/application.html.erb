@@ -24,9 +24,15 @@
         ============================== -->
         
         <% if @solid %>
-        <header class="header slider" id="top">
+            <header class="header slider" id="top">
+        <% elsif @fsvideo %>
+             <header class="header video-bg" id="top">
+        <% elsif @susvideo %>
+             <header class="header video-bg" id="top-2">
+        <% elsif @healthvideo %>
+             <header class="header video-bg" id="top-3">
         <% else %>
-        <header class="solid-bg" id="top">
+            <header class="solid-bg" id="top">
         <% end %>
             <!-- Background Overlay -->
             <div class="overlay">
@@ -46,15 +52,15 @@
                                         <i class="icon icon_menu"></i>
                                     </button>
 
-                                    <!-- Text-Logo 
-                                    <a href="#top" class="navbar-brand scrollto" title="AngularX">
+                                    <!-- Text-Logo --> 
+                                    <a href="<%= root_path %>" class="navbar-brand" title="AngularX">
                                         <span class="text-logo">AngularX</span>
-                                    </a> -->
+                                    </a> 
 
                                      <!--Image-Logo: Remove this comments and the section above Text-Logo if you want to add an Image-Logo (recommended sizes -> max-height:50, max-width:200) -->
 
-                                    <a href="#top" class="navbar-brand img-logo scrollto" title="AngularX">
-                                       <%= link_to  (image_tag "AngularX_Logo.png", alt: "Logo", height: '40'), root_path %>
+                                    <!--<a href="#top" class="navbar-brand img-logo scrollto" title="AngularX">
+                                       <%= link_to  (image_tag "AngularX_Logo.png", alt: "Logo", height: '40'), root_path %>-->
                                     
                                     </a> 
                                     
@@ -70,7 +76,7 @@
                                         <li class="dropdown" id="header-dd">
                                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
                                           <ul class="dropdown-menu">
-                                            <li><a href="#">Sustainability</a></li>
+                                            <li><%= link_to "Sustainability", sustainability_path %></li>
                                             <li><a href="#">Talent</a></li>
                                             <li><a href="#">Profitability</a></li>
                                             <li><a href="#">Financial Analytics</a></li>
@@ -85,11 +91,11 @@
                                            <li class="dropdown" id="header-dd">
                                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Industries<span class="caret"></span></a>
                                           <ul class="dropdown-menu">
-                                            <li><a href="#">Financial Services</a></li>
-                                            <li><a href="#">Education &amp; Non Profit</a></li>
+                                            <li><%= link_to "Financial Services", financial_services_path %>
+                                            <li><%= link_to "Education & Non Profit", education_path %></li>
                                             <li><a href="#">Energy</a></li>
                                             <li role="separator" class="divider"></li>
-                                            <li><a href="#">Health care</a></li>
+                                            <li><%= link_to "Health Care", health_care_path %></li>
                                           </ul>
                                         </li>
                                         <li><a href="#pricing" title="" class="scrollto">Participants</a></li>
@@ -107,28 +113,30 @@
                                                      <div class="col-sm-4 col-xs-6">
                                                       <a href="#">
                                                         <span class="blog"></span>
-                                                        <div class="menu"><span><i class="icon-speedometer" id='terminal'></i></span>Dashboard</div>
+                                                        <div class="menu"><%= image_tag "dash-icon.png", height: "70" %>Dashboard</div>
+                                                      </a>
+                                                    </div>
+                                                    <div class="col-sm-4 col-xs-6" id="terminal">
+                                                      <a href="#">
+                                                        <span class="blog"></span>
+                                                        <div class="menu"><%= image_tag "chat-icon.png", height: "70" %>Talent</div>
                                                       </a>
                                                     </div>
                                                     <div class="col-sm-4 col-xs-6">
                                                       <a href="#">
                                                         <span class="blog"></span>
-                                                        <div class="menu"><span><i class="icon-bargraph" id='terminal'></i></span>Terminal</div>
-                                                      </a>
+                                                        <div class="menu"><%= image_tag "fs-icon.png", height: "70" %>Terminal</div>
                                                     </div>
                                                     <div class="col-sm-4 col-xs-6">
                                                       <a href="#">
-                                                        <div class="menu"><span><i class="icon-chat" id='talent'></i></span>Talent</div>
-                                                      </a>
-                                                    </div>
-                                                    <div class="col-sm-4 col-xs-6">
-                                                      <a href="#">
-                                                        <div class="menu"><span><i class="icon-search" id='GRI'></i></span>GRI Search</div>
+                                                        <span class="blog"></span>
+                                                        <div class="menu"><%= image_tag "settings-icon.png", height: "70" %>Settings</div>
                                                       </a>
                                                     </div> 
                                                     <div class="col-sm-4 col-xs-6">
                                                       <a href="#">
-                                                        <div class="menu"><span><i class="icon-profile-female" id='participant'></i></span>Participants</div>
+                                                        <span class="blog"></span>
+                                                        <div class="menu"><%= image_tag "participant-icon.png", height: "70" %>Participant</div>
                                                       </a>
                                                     </div> <!--/End for Participants -->
                                                  </div> <!--/End for list-->

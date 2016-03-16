@@ -6,6 +6,11 @@ Rails.application.routes.draw do
    
    get '/about', :to => 'pages#about' 
 
+   get '/financial-services', :to => 'pages#financial_services'
+   get '/health-care', :to => 'pages#health_care'
+   get '/education', :to => 'pages#education'
+   get '/sustainability', :to => 'pages#sustainability'
+
    get 'about/principles', :to => 'pages#principles'
    get 'about/culture', :to => 'pages#culture'
    get 'about/software', :to => 'pages#software'
@@ -20,8 +25,10 @@ Rails.application.routes.draw do
    get '/use-cases/sustainability', :to => 'pages#use_sustainability'
    get '/use-cases/talent-analytics', :to => 'pages#use_talent'
    get '/use-cases/financial-statement-analytics', :to => 'pages#use_financial_statement'
+    get '/use-cases/human-resources', :to => 'pages#human_resources'
    get '/use-cases/profitability', :to => 'pages#use_profitability'
    get '/case-studies', :to => 'pages#studies'
+
 
   
   

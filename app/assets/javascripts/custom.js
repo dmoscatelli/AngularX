@@ -521,6 +521,103 @@ $('.start-line').waypoint(function(direction){
 
 
 /* =======================================================================
+   TALENT CHART
+========================================================================== */
+
+
+
+jQuery(document).ready(function () {   
+var isline = 0;  
+$('.talent-line').waypoint(function(direction){
+    if (isline == 1){}
+        else {
+
+            var lineChartData = {
+                labels : ["January","February","March","April","May","June","July"],
+                datasets : [
+                    {
+                        label: "My First dataset",
+                        fillColor : "rgba(66, 133, 244, 0.2)",
+                        strokeColor : "rgba(66, 133, 244, 0.2)",
+                        pointColor : "rgba(66, 133, 244, 0.4)",
+                        pointStrokeColor : "#fff",
+                        pointHighlightFill : "#fff",
+                        pointHighlightStroke : "rgba(192,57,43,1)",
+                        data : [10,20,20,15,25,37,32]
+                    },
+                    {
+                        label: "My Second dataset",
+                        fillColor : "rgba(39, 174, 96, 0.2)",
+                        strokeColor : "rgba(39, 174, 96, 0.2)",
+                        pointColor : "rgba(39, 174, 96, 1)",
+                        pointStrokeColor : "#fff",
+                        pointHighlightFill : "#fff",
+                        pointHighlightStroke : "rgba(50,58,69,1)",
+                        data : [20,23,33,57,32,41,29]
+                    }
+                ]
+
+            };
+
+            var ctx = document.getElementById("talent-canvas").getContext("2d");
+            window.myLine = new Chart(ctx).Line(lineChartData, {responsive: true});
+
+            isline = 1;
+        }
+    });
+});
+
+/* =======================================================================
+   FINANCIAL STATEMENT ANALYTICS CHART
+========================================================================== */
+
+
+
+jQuery(document).ready(function () {   
+var isline = 0;  
+$('.fs-analytics-line').waypoint(function(direction){
+    if (isline == 1){}
+        else {
+
+            var lineChartData = {
+                labels : ["January","February","March","April","May","June","July"],
+                datasets : [
+                    {
+                        label: "My First dataset",
+                        fillColor : "rgba(66, 133, 244, 0.2)",
+                        strokeColor : "rgba(66, 133, 244, 0.2)",
+                        pointColor : "rgba(66, 133, 244, 0.4)",
+                        pointStrokeColor : "#fff",
+                        pointHighlightFill : "#fff",
+                        pointHighlightStroke : "rgba(192,57,43,1)",
+                        data : [10,20,20,15,25,37,32]
+                    },
+                    {
+                        label: "My Second dataset",
+                        fillColor : "rgba(39, 174, 96, 0.2)",
+                        strokeColor : "rgba(39, 174, 96, 0.2)",
+                        pointColor : "rgba(39, 174, 96, 1)",
+                        pointStrokeColor : "#fff",
+                        pointHighlightFill : "#fff",
+                        pointHighlightStroke : "rgba(50,58,69,1)",
+                        data : [20,23,33,57,32,41,29]
+                    }
+        
+                ]
+
+            };
+
+            var ctx = document.getElementById("fs-analytics-canvas").getContext("2d");
+            window.myLine = new Chart(ctx).Line(lineChartData, {responsive: true});
+
+            isline = 1;
+        }
+    });
+});
+
+
+
+/* =======================================================================
    SIGNUP-DIVIDER ANIMATED POLYGON BACKGROUND
 ========================================================================== */
     var container = document.getElementById('canvas-bg');

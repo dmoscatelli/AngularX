@@ -28,6 +28,15 @@ Rails.application.config.assets.precompile += %w( aicpa.png )
 Rails.application.config.assets.precompile += %w( g4.png )
 Rails.application.config.assets.precompile += %w( AngularX_Comp.png )
 Rails.application.config.assets.precompile += %w( use-case-1.png )
+Rails.application.config.assets.precompile += %w( report.png )
+Rails.application.config.assets.precompile += %w( Angular-Talent-Analytics.png )
+Rails.application.config.assets.precompile += %w( Angular_talent_box.png )
+Rails.application.config.assets.precompile += %w( profile-picture-2.png )
+Rails.application.config.assets.precompile += %w( dash-icon.png )
+Rails.application.config.assets.precompile += %w( chat-icon.png )
+Rails.application.config.assets.precompile += %w( fs-icon.png )
+Rails.application.config.assets.precompile += %w( settings-icon.png )
+Rails.application.config.assets.precompile += %w( participant-icon.png )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

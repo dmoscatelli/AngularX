@@ -21,7 +21,9 @@
 //= require plugins.min
 //= require jquery.superslides.min
 //= require Chart
+//= require videoplugins.min
 //= require custom
+//= require videobg
 //= require slider
 
 

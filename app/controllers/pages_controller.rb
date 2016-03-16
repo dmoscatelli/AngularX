@@ -20,7 +20,23 @@ def careers
 end
 
 def faq
-end  
+end 
+
+def financial_services
+	@fsvideo = true 
+end
+
+def health_care
+	@healthvideo = true
+end
+
+def education
+	@single = true	
+end
+
+def sustainability
+	@susvideo = true 
+end 
 
 
 def cases
@@ -48,6 +64,9 @@ def use_profitability
 end
 
 def studies
+end
+
+def human_resources
 end
 
 
